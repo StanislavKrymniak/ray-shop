@@ -1,8 +1,15 @@
+import React from 'react';
+import Categories from '../../components/categories/categories.component';
 
 
 
-const Shop = () => {
-    return <h1>Shop Page</h1>;
+export const Shop = () => {
+  return ( 
+    <nav className='shop_container'>
+      <h1>Shop Page</h1>
+      <Categories />
+    </nav>
+  )
 };
 
-export default Shop
+export default Shop;
