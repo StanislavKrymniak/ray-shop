@@ -1,4 +1,7 @@
 import CategoriesItem from "../categories-item/categories-item.component";
+import './categories.styles.scss'
+
+
 
 const  categories = [
     {
@@ -36,9 +39,11 @@ const  categories = [
 export const Categories = () => {
 
     return (
-        <nav className="categories_container">
-            <CategoriesItem categories = {categories} />
-        </nav>
+        <div className="categories_container">
+            {categories.map((category) => (
+                <CategoriesItem key={category.id} category = {category} />
+            ))}
+        </div>
     )
 }
 
