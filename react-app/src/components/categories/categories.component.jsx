@@ -1,4 +1,4 @@
-import CategoriesItem from "../categories-item/categories-item.component";
+import CategoriesPreview from "../categories-preview/categories-preview.component";
 import './categories.styles.scss'
 
 
@@ -24,15 +24,15 @@ const  categories = [
     },
     {
     id: 4,
-    title: 'Womens',
+    title: 'Women',
     imageURL: 'https://i.ibb.co/GCCy8t/womens.png',
-    route: 'shop/womens'
+    route: 'shop/women'
     },
     {
     id: 5,
-    title: 'Mens',
+    title: 'Men',
     imageURL: 'https://i.ibb.co/R70vBrQ/men.png',
-    route: 'shop/mens'
+    route: 'shop/men'
     }
 ]
 
@@ -41,7 +41,7 @@ export const Categories = () => {
     return (
         <div className="categories_container">
             {categories.map((category) => (
-                <CategoriesItem key={category.id} category = {category} />
+                <CategoriesPreview key={category.id} category = {category} />
             ))}
         </div>
     )

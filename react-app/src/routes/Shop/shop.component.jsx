@@ -1,6 +1,6 @@
 import React from 'react';
 import Categories from '../../components/categories/categories.component';
-
+import './shop.styles.scss'
 
 
 export const Shop = () => {
