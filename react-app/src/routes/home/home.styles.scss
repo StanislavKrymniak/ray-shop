@@ -43,7 +43,7 @@
         .about {
             background-color: black;
             position: absolute;
-            top : -60px;
+            top : -85px;
             right: 0px;
             height: 210px;
             width: 400px;
@@ -74,12 +74,11 @@
             margin: 0 auto;
         }
         .home-details_columns {
-            align-items: center;
+            align-items: end;
             display: flex;
-            flex: 1 1 500%;
+            
             .column_1 {
-                
-                .image {}
+                margin-right: 70px;
             }
             .column_2 {
                 display: block;
@@ -87,7 +86,7 @@
                     
                 }
                 .text {
-                    
+                    font-size: 28px;
                 }
             }
         }
