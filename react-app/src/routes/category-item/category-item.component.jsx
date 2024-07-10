@@ -34,17 +34,21 @@ const CategoryItem = () => {
           </div>
           <div className='category-item_text'>Price: ${product.price}</div>
         </div>
-        <div className="category-item_cloumn_2">
-          <h2 className="category-item_choose">Size:</h2>
-          <select id="size" name="size" value={selectedSize} onChange={handleSizeChange}>
-            <option value="XS">XS</option>
-            <option value="S">S</option>
-            <option value="M">M</option>
-            <option value="L">L</option>
-            <option value="XL">XL</option>
-            <option value="XXL">XXL</option>
-          </select>
-          <button className="category-item_button" onClick={addProductToCart}>Add to Cart</button>
+          <div className="category-item_cloumn_2">
+          {category.toLowerCase() !== 'hats' && (
+            <>
+              <h2 className="category-item_choose">Size:</h2>
+              <select id="size" name="size" value={selectedSize} onChange={handleSizeChange}>
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+              </select>
+            </>
+          )}
+            <button className="category-item_button" onClick={addProductToCart}>Add to Cart</button>
         </div>
       </div>
     </div>
@@ -52,3 +56,17 @@ const CategoryItem = () => {
 };
 
 export default CategoryItem;
+
+
+
+/*
+
+                {
+                    cartItems.length ? (cartItems.map((item) => (
+                        <CartItem key={item.id} cartItem={item} />
+                    ))) : (
+                        <EmptyMessage>Your cart is empty</EmptyMessage>
+                    )
+                }
+
+*/
