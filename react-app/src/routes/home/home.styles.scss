@@ -1,5 +1,4 @@
 .home-container {
-
     .home-header {
         height: 880px;
         width: 100%;
@@ -48,20 +47,22 @@
             right: 0px;
             height: 210px;
             width: 400px;
-           .about_container {
-            position: relative;
-            height: 100%;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            flex: 0 0 100%;
-           }
-            .block {
+            .about_container {
+                height: 100%;
+                width: 100%;
                 display: flex;
-                .block_icon {
-
+                justify-content: center;
+                flex-direction: column;                
+            }
+            .about_block {
+                margin: 5px 0;
+                display: flex;
+                align-items: center;
+                .about_block_icon {
+                    margin: 0 7px 0 40px;
                 }
-                .block_text{
+                .about_block_text {
+                    font-size: 24px;
                     color: #fff;
                 }
             }

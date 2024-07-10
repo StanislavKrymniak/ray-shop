@@ -16,17 +16,17 @@ export const Home = () => {
       <div className="home-details">
         <div className="home-details about">
           <div className="about_container">
-            <div className="about block">
-                  <div className="block_icon"><img src={detailsVector} alt="" /></div>
-                  <div className="block_text">отличное качество</div>           
+              <div className="about_block">
+                  <span className="about_block_icon"><img src={detailsVector} alt="" /></span>
+                  <div className="about_block_text">отличное качество</div>           
               </div>
-              <div className="about block">            
-                  <div className="block_icon"><img src={detailsVector} alt="" /></div>
-                  <div className="block_text">приятный материал</div>
+              <div className="about_block">            
+                  <span className="about_block_icon"><img src={detailsVector} alt="" /></span>
+                  <div className="about_block_text">приятный материал</div>
               </div>
-              <div className="about block">
-                  <div className="block_icon"><img src={detailsVector} alt="" /></div>
-                  <div className="block_text">доставка по всему миру</div>
+              <div className="about_block">
+                  <span className="about_block_icon"><img src={detailsVector} alt="" /></span>
+                  <div className="about_block_text">доставка по всему миру</div>
               </div>
           </div>
         </div>
